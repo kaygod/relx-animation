@@ -1,1 +1,1 @@
-import "./example/fadeLeftAndRight";
+import "./example/slideToggle";

@@ -1,6 +1,6 @@
 import fadeLeftAndRight from "../js/fadeLeftAndRight";
 import { injectHtml } from "../js/helper";
-import "./example.less";
+import "./example.scss";
 
 const html = `
     <div class="ra-container ra-opacity-0">

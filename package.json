@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaygod/rollup-template.git"
+    "url": "git+https://github.com/kaygod/relx-animation.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kaygod/rollup-template/issues"
+    "url": "https://github.com/kaygod/relx-animation/issues"
   },
-  "homepage": "https://github.com/kaygod/rollup-template#readme",
+  "homepage": "https://github.com/kaygod/relx-animation#readme",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",

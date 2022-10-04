@@ -1,11 +1,6 @@
 # Description
 
-this is template of rollup,include many plugins.
+Relx animation repository,please go githup ``https://github.com/kaygod/relx-animation.git``.  
 
-## develop command
+There are some examples in source code.
 
-``yarn dev``
-
-## bundle command
-
-``yarn build``

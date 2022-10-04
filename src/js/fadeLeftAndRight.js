@@ -1,7 +1,7 @@
-import "../css/index.less";
-import "../css/fadeUp.less";
-import "../css/fadeLeft.less";
-import "../css/fadeRight.less";
+import "../css/index.scss";
+import "../css/fadeUp.scss";
+import "../css/fadeLeft.scss";
+import "../css/fadeRight.scss";
 
 import { viewportWatch } from "./helper";
 
@@ -13,6 +13,8 @@ export default class fadeLeftAndRight {
      this.className = params.className;
      this.$leftEl = this.$el.querySelector(`.${params.leftClassName}`);
      this.$rightEl = this.$el.querySelector(`.${params.rightClassName}`);
+     this.threshold = params.threshold;
+     this.once = params.once || true; // 动画只触发一次吗
      this.init();
   }
 
@@ -26,7 +28,9 @@ export default class fadeLeftAndRight {
     this.updateStyle(); 
     viewportWatch({
         $el:this.$el,  
-        onEnter:this.onEnter.bind(this)
+        onEnter:this.onEnter.bind(this),
+        threshold:this.threshold,
+        once:this.once
     })
   }
 

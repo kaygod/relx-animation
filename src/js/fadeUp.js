@@ -1,5 +1,5 @@
-import "../css/index.less";
-import "../css/fadeUp.less";
+import "../css/index.scss";
+import "../css/fadeUp.scss";
 
 import { viewportWatch } from "./helper";
 
@@ -9,6 +9,8 @@ export default class fadeUp {
      this.$el = params.$el;
      this.className = params.className;
      this.animationDuration = params.animationDuration;
+     this.threshold = params.threshold; // 元素进入视口多大比例才触发动画
+     this.once = params.once || true; // 动画只触发一次吗
      this.init();
   }
 
@@ -23,7 +25,9 @@ export default class fadeUp {
     viewportWatch({
         $el:this.$el,
         onEnter:this.onEnter.bind(this),
-        onLeave:this.onLeave.bind(this)
+        onLeave:this.onLeave.bind(this),
+        threshold:this.threshold,
+        once:this.once
     })
   }
 

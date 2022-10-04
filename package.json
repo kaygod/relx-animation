@@ -1,8 +1,8 @@
 {
-  "name": "rollup-template",
+  "name": "relx-animation",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/js/index.js",
   "scripts": {
     "dev": "rollup --config rollup.config.js -w",
     "build": "rollup --config rollup.config.prod.js"
@@ -34,6 +34,7 @@
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-serve": "^2.0.1",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.55.0"
   }
 }
